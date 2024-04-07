@@ -113,7 +113,7 @@ section p {
     font-family: cf;
     font-size: 24px;
     color: grey;
-    width: 650px;
+    max-width: 650px;
     margin: auto;
 }
 
@@ -123,6 +123,7 @@ section p {
     margin: 100px auto;
     display:grid;
     grid-template-columns: auto auto;
+    
 }
 
 .card{
@@ -149,7 +150,7 @@ section p {
 }
 
 .card p {
-    width: auto;
+    font-family: js-reg;
     font-size: 20px;
     color: black;
     text-align: left;
