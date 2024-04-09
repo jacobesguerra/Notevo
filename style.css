@@ -1,4 +1,4 @@
-* {
+html {
     text-decoration: none;
     font-family: 'Lucida Grande',  Geneva, Verdana, sans-serif;
 }
@@ -18,22 +18,36 @@
     src: url("Fonts/CraftRounded-Regular.ttf");
 }
 
-@media only screen and (max-width:730px) {
+@media only screen and (max-width:900px) {
     nav ul {
         display: none;
     }
     #login-btn {
         display: none;
     }
+    #cards {
+        grid-template-columns: auto;
+        
+    }
+    #menu {
+        display: block;
+    }
 }
 
-@media only screen and (min-width:730px) {
+@media only screen and (min-width:900px) {
     nav ul {
         display: flex;
     }
 
     #login-btn {
         display: block;
+    } 
+    #cards {
+        grid-template-columns: auto auto;
+    }
+
+    #menu {
+        display: none;
     }
 }
 
@@ -42,6 +56,13 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+}
+
+#menu {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
 }
 
 #logo {
@@ -79,6 +100,10 @@ nav h1{
     left: 40px;
 }
 
+nav span {
+    font-size: 100px;
+}
+
 .btn {
     position: relative;
     padding: 0 20px 0 20px;
@@ -114,16 +139,15 @@ section p {
     font-size: 24px;
     color: grey;
     max-width: 650px;
+    min-width: 0px;
     margin: auto;
 }
 
 #cards {
-    width: 900px;
+    width: fit-content;
     height: 450px;
     margin: 100px auto;
     display:grid;
-    grid-template-columns: auto auto;
-    
 }
 
 .card{
@@ -133,7 +157,8 @@ section p {
     align-items: self-start;
     border-radius: 10px;
     padding: 30px;
-    width: 400px;
+    max-width: 400px;
+    min-width: 0;
     height: 230px;
 }
 
@@ -151,7 +176,7 @@ section p {
 
 .card p {
     font-family: js-reg;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     text-align: left;
 }
