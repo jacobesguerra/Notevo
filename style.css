@@ -268,3 +268,57 @@ section p {
     color: grey;
     min-width: 250px;
 }
+
+#login-container {
+    width: 600px;
+    height: fit-content;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+#login-container img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: auto;
+}
+
+#login-container form {
+    display: block;
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#login-container h4 {
+    display: inline;
+    font-family: js-reg;
+    text-align: left;
+}
+
+#login-container input {
+    width: 500px;
+    min-width: 0px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: js-reg;
+    font-size: 20px;
+}
+
+#login-container input:focus {
+    outline: none;
+}
+
+#login-container p{
+    font-family: js-reg;
+    color: gray;
+}
+
+#sign-up {
+    cursor: pointer;
+}
